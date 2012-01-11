@@ -21,7 +21,38 @@ namespace OSIM.UnitTests.OSIM.Core
     /// </summary>
     public class when_working_with_the_item_type_repository : Specification
     {
+        ///Instance variable for the respository instance. Relies on the Mock of SessionFactory. 
+        protected IItemTypeRepository _itemTypeRepository;
+
+        ///Instance variable for the Mock of SessionFactory.  Relies on Mock of Session.
+        protected Mock<ISessionFactory> _sessionFactory;
+
+        ///Instance variable Session.
+        protected Mock<ISession> _session;
+
+        /// <summary>
+        /// A virtual method inherited from the NBehave class SpecBase.
+        /// This method is inherited by the tests to provide the CONTEXT under which they will
+        /// run so as to reduce code duplication.
+        /// </summary>
+        protected override void Establish_context()
+        {
+            base.Establish_context();
+
+            ///provides a stub value (mocked Session Factory) for the ItemTypeRepository constructor.
+            _sessionFactory = new Mock<ISessionFactory>();
+
+            ///create new mock object of the Session class.
+            _session = new Mock<ISession>();
+            
+            ///stub method for SessionFactory.OpenSession that returns the mocked Session object.
+            _sessionFactory.Setup(sf => sf.OpenSession()).Returns(_session.Object);
+
+            ///new instace of the ItemTypeRepository with mock of the SessionFactory object as its parameter,
+            _itemTypeRepository = new ItemTypeRepository(_sessionFactory.Object);
+        }
     }
+
 
     /// <summary>
     /// This class contains the unit test for the saving a valid item type feature.
@@ -32,9 +63,6 @@ namespace OSIM.UnitTests.OSIM.Core
         /// holds the return value of the current test.
         private int _result;
 
-        ///respository instance
-        private IItemTypeRepository _itemTypeRepository;
-
         /// used to store an item type that is under test 
         private ItemType _testItemType;
 
@@ -44,7 +72,7 @@ namespace OSIM.UnitTests.OSIM.Core
 
         /// <summary>
         /// A virtual method inherited from the NBehave class SpecBase, this method
-        /// provides a place to create the context under which your tests will run.
+        /// provides a place to create the CONTEXT under which your tests will run.
         /// </summary>
         protected override void Establish_context()
         {
@@ -53,19 +81,8 @@ namespace OSIM.UnitTests.OSIM.Core
             var randomNumberGenerator = new Random();
             _itemTypeId = randomNumberGenerator.Next(32000);
 
-            ///provides a stub value (mocked Session Factory) for the ItemTypeRepository constructor.
-            var sessionFactory = new Mock<ISessionFactory>();
-
-            ///create new mock object of the Session class.
-            var session = new Mock<ISession>();
-
             ///supply the Session mock with a stubbed implementation of the Save method.
-            session.Setup(s => s.Save(_testItemType)).Returns(_itemTypeId);
-
-            ///stub method for SessionFactory.OpenSession that returns the mocked Session object.
-            sessionFactory.Setup(sf => sf.OpenSession()).Returns(session.Object);
-
-            _itemTypeRepository = new ItemTypeRepository(sessionFactory.Object);
+            _session.Setup(s => s.Save(_testItemType)).Returns(_itemTypeId);
         }
 
 
@@ -91,5 +108,64 @@ namespace OSIM.UnitTests.OSIM.Core
             _result.ShouldEqual(_itemTypeId);
         }
     }
+
+
+    /// <summary>
+    /// This class tests if a null object has been written to the database.  If so, the repository throws
+    /// an exeption.
+    /// </summary>
+    public class and_saving_an_invalid_item_type : when_working_with_the_item_type_repository
+    {
+
+        /// <summary>
+        /// _result is declared as type Exception because even though we the call to ItemTypeRepository
+        /// to raise an exception, we want to verify the type of exception. If we were more specific with the
+        /// type, such as declaring it as an ArgumentNullException type, if any other exception was thrown,
+        /// a runtime error would occur.
+        /// </summary>
+        private Exception _result;
+
+
+        /// <summary>
+        /// Sets up the context that 'then_an_argument_null_exception_should_be_raised()' will run under.
+        /// </summary>
+        protected override void Establish_context()
+        {
+            base.Establish_context();
+
+            ///Setup a stub for the Save method that reacts to the value null
+            _session.Setup(s => s.Save(null)).Throws(new ArgumentNullException());
+        }
+
+
+        /// <summary>
+        /// EXECUTION portion of test.
+        /// This method executes the Save method of the current _itemRepository instance on a null object.
+        /// Any subsequent exceptions are captured in the catch portion of the try/catch block.
+        /// </summary>
+        protected override void Because_of()
+        {
+            try
+            {
+                _itemTypeRepository.Save(null);
+            }
+            catch (Exception exception)
+            {
+                _result = exception;
+            }
+        }
+
+        /// <summary>
+        /// EVALUATION portion of test.
+        /// This method validates that an exception of type ArgumentNullEception was thrown.
+        /// </summary>
+        [Test]
+        public void then_an_argument_null_exception_should_be_raised()
+        {
+            _result.ShouldBeInstanceOfType(typeof(ArgumentNullException));
+        }
+
+    }
+
 
 }
