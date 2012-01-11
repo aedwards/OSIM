@@ -1,0 +1,5 @@
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\OSIM.IntegrationTests.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\OSIM.IntegrationTests.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\obj\Debug\ResolveAssemblyReference.cache
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\obj\Debug\OSIM.IntegrationTests.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\obj\Debug\OSIM.IntegrationTests.pdb

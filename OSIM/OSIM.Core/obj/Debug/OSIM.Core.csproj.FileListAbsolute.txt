@@ -1,0 +1,14 @@
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\OSIM.Core.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\OSIM.Core.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\FluentNHibernate.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\NHibernate.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\Iesi.Collections.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\FluentNHibernate.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\FluentNHibernate.xml
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\NHibernate.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\NHibernate.xml
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\Iesi.Collections.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\bin\Debug\Iesi.Collections.xml
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\obj\Debug\ResolveAssemblyReference.cache
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\obj\Debug\OSIM.Core.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.Core\obj\Debug\OSIM.Core.pdb

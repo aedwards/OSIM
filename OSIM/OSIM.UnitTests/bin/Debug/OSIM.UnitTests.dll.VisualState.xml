@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1004]G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.UnitTests\bin\Debug\OSIM.UnitTests.dll</TopNode>
+  <SelectedNode>[0-1004]G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.UnitTests\bin\Debug\OSIM.UnitTests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1004]G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.UnitTests\bin\Debug\OSIM.UnitTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1005]OSIM" Expanded="true" />
+    <Node UniqueName="[0-1006]OSIM.UnitTests" Expanded="true" />
+    <Node UniqueName="[0-1007]OSIM.UnitTests.OSIM" Expanded="true" />
+    <Node UniqueName="[0-1008]OSIM.UnitTests.OSIM.Core" Expanded="true" />
+    <Node UniqueName="[0-1002]OSIM.UnitTests.OSIM.Core.and_saving_a_valid_item_type" Expanded="true" />
+  </Nodes>
+</VisualState>

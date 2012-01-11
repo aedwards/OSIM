@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSIM.Core", "OSIM.Core\OSIM.Core.csproj", "{AFAB5C78-EBDA-439F-B823-161E94D650FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSIM.IntegrationTests", "OSIM.IntegrationTests\OSIM.IntegrationTests.csproj", "{1DA50827-631C-4699-A900-564D6544B881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OSIM.UnitTests", "OSIM.UnitTests\OSIM.UnitTests.csproj", "{14A0810C-3ECD-44CB-B195-18D66C9293C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFAB5C78-EBDA-439F-B823-161E94D650FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFAB5C78-EBDA-439F-B823-161E94D650FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFAB5C78-EBDA-439F-B823-161E94D650FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFAB5C78-EBDA-439F-B823-161E94D650FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA50827-631C-4699-A900-564D6544B881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA50827-631C-4699-A900-564D6544B881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA50827-631C-4699-A900-564D6544B881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA50827-631C-4699-A900-564D6544B881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A0810C-3ECD-44CB-B195-18D66C9293C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A0810C-3ECD-44CB-B195-18D66C9293C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A0810C-3ECD-44CB-B195-18D66C9293C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A0810C-3ECD-44CB-B195-18D66C9293C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
