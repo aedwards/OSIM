@@ -3,3 +3,14 @@ G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSI
 G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\obj\Debug\ResolveAssemblyReference.cache
 G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\obj\Debug\OSIM.IntegrationTests.dll
 G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\obj\Debug\OSIM.IntegrationTests.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\Ninject.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\OSIM.Core.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\NHibernate.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\Iesi.Collections.dll
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\OSIM.Core.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\Ninject.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\Ninject.xml
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\NHibernate.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\NHibernate.xml
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\Iesi.Collections.pdb
+G:\C#_Development\Professional_Test_Driven_Development_with_CSharp\OSIM\OSIM\OSIM.IntegrationTests\bin\Debug\Iesi.Collections.xml

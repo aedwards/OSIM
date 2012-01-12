@@ -51,5 +51,21 @@ namespace OSIM.Core.Persistence
 
             return id;
         }
+
+
+        /// <summary>
+        /// This method allows consumers of ItemTypeRepository to retrieve an instance
+        /// of ItemType by supplying the ID.
+        /// </summary>
+        /// <param name="id">The primary key for the ItemType data table in the database.</param>
+        /// <returns></returns>
+        public ItemType GetById(int id)
+        {
+            using (var session = _sessionFactory.OpenSession())
+            {
+                return session.Get<ItemType>(id);
+            }
+
+        }
     }
 }
